@@ -1,7 +1,7 @@
 # Build Your Own Camera
 
 [BYOC](https://github.com/sgjava/byoc/wiki) is a RK3066 based system that turns
-an Android based Google TV player into an intellgent camera system. You can of
+an Android based Google TV player into an intelligent camera system. You can of
 course just use it as a network based webcam as well.
 
 ### FreeBSD License
