@@ -7,6 +7,7 @@ Copyright (c) Steven P. Goldsmith
 
 All rights reserved.
 """
+
 import socket
 import select
 import threading
@@ -67,7 +68,6 @@ if __name__ == "__main__":
     t1 = threading.Thread(target=inputLoop, args=[app])
     t1.setDaemon(True)
     t1.start()
-
     try:
         print "Httpd serve forever"
         httpd.serve_forever()
