@@ -26,6 +26,26 @@ load a GUI desktop for management if desired.
 
 See the [Wiki](https://github.com/sgjava/byoc/wiki) for more information.
 
+Here's an example of optimized network performance compared to always streaming cameras. The CVP server uses
+a centralized model with four 640x480 MJPEG cameras that operate an average of about 15 FPS. During night (least amount of traffic)
+time hours incoming traffic is just above 4 Mbps or about 1 Mbps per camera. This is because a centralized server is reading frames all
+the time. The spikes you see are SCP activity from the BYOC cameras.
+
+![Central server](images/central.png)
+
+Now look at Front camera which is 1280x720 (3 times the resolution of 640 x 480) at 10 FPS. Note the outgoing traffic averages
+252 Kbps. So that means about 1/4 the traffic and 3 times the resolution. This is possible since only compressed motion videos are
+transfered over the network. By using the extra RK3066 core for compression your get about 10 times smaller files using XVID compared
+to MJPEG. As better video compression is implemented expect smaller files.
+ 
+
+![Front camera](images/front.png)
+
+Finally Front Side camera is using 1280x1024 at 5 FPS. It averages only 37 Kbps for the same 24 hour period. If you only sent files that
+had just people detected it would use a lot less bandwidth. It really depends on the conditions and features you have enabled in CVP.
+
+![Front side camera](images/front-side.png)
+
 ### FreeBSD License
 
 Copyright (c) Steven P. Goldsmith
