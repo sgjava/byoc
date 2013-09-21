@@ -8,7 +8,7 @@ using a self contained intelligent camera system are:
 1. An attached USB camera is more reliable than most wifi cameras as it relates to
 connectivity and FPS consistency.
 2. A wider selection of camera resolutions and features for the money. You can
-build a high definition camera (1280x720) for less than $100 US (I paid $77.71
+build a high definition camera (1280x720) for less than $100 US (It's around $75.00
 with free shipping). You can also choose the USB camera that fits the application
 at hand. Swap out the camera for a fraction of an IP based equivalent.
 3. Resilience in terms of network connectivity which isn't required to capture
