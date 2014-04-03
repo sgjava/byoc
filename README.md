@@ -1,6 +1,6 @@
 # Build Your Own Camera
 
-[BYOC](https://github.com/sgjava/byoc/wiki) is an RK3066 based system that turns
+[BYOC](https://github.com/sgjava/byoc/wiki) is an RK3066/RK3188 based system that turns
 an Android Google TV player into an intelligent camera system. You can of
 course just use it as a wireless IP based webcam as well. Some of the advantages of
 using a self contained intelligent camera system are: 
@@ -8,9 +8,10 @@ using a self contained intelligent camera system are:
 1. An attached USB camera is more reliable than most wifi cameras as it relates to
 connectivity and FPS consistency.
 2. A wider selection of camera resolutions and features for the money. You can
-build a high definition camera (1280x720) for less than $100 US (It's around $75.00
-with free shipping). You can also choose the USB camera that fits the application
-at hand. Swap out the camera for a fraction of an IP based equivalent.
+build a high definition quad core camera (1280x720) for less than $100 US (It's
+around $75.00 with free shipping). You can also choose the USB camera that fits
+the application at hand. Swap out the camera for a fraction of an IP based
+equivalent.
 3. Resilience in terms of network connectivity which isn't required to capture
 video. Once network services are restored the video files can be transferred
 via email, SCP, etc. Most IP based cameras do not have storage hence you lose
