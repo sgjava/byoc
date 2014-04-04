@@ -1,12 +1,20 @@
 # Build Your Own Camera
 
-[BYOC](https://github.com/sgjava/byoc/wiki) is an RK3066/RK3188 based system that turns
-an Android Google TV player into an intelligent camera system. You can of
-course just use it as a wireless IP based webcam as well. Some of the advantages of
-using a self contained intelligent camera system are: 
+[BYOC](https://github.com/sgjava/byoc/wiki) is an RK3066/RK3188 based system that
+turns an Android Google TV player into an intelligent camera system. You can of
+course just use it as a wireless IP based webcam as well. I've learned a lot since
+implementing my first cameras over a year ago. Now I'm building my own kernels and
+Ubuntu distributions. I have improved my OpenCV installation script to build
+almost everything from source. I have added Java to the mix with Python, so you
+have a choice of bindings. You can still just build your own camera without any
+programming skills, but I give those so inclined the ability to get a Computer
+Vision system up on dual or quad core mini computers. I will continue to improve
+scripts that monitor network connectivity and detect USB camera failures.
+
+Some of the advantages of using a self contained intelligent camera system are: 
  
-1. An attached USB camera is more reliable than most wifi cameras as it relates to
-connectivity and FPS consistency.
+1. An attached USB camera is more reliable than most wifi cameras as it relates
+to connectivity and FPS consistency.
 2. A wider selection of camera resolutions and features for the money. You can
 build a high definition quad core camera (1280x720) for less than $100 US (It's
 around $75.00 with free shipping). You can also choose the USB camera that fits
@@ -38,7 +46,6 @@ Now look at Front camera which is 1280x720 (3 times the resolution of 640 x 480)
 252 Kbps. So that means about 1/4 the traffic and 3 times the resolution. This is possible since only compressed motion videos are
 transfered over the network. By using the extra RK3066 core for compression your get about 10 times smaller files using XVID compared
 to MJPEG. As better video compression is implemented expect smaller files.
- 
 
 ![Front camera](images/front.png)
 
